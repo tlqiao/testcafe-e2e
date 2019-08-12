@@ -6,7 +6,9 @@
   "scripts": {
     "version": "testcafe -v",
     "browsers": "testcafe -b",
-    "test": "testcafe chrome ./e2e/article/postNewArticleSpec.js"
+    "test:chrome": "testcafe chrome ./e2e/scenario/article/case/postNewArticleSpec.js",
+    "test:firefox": "testcafe firefox ./e2e/scenario/article/case/postNewArticleSpec.js",
+    "test:safari":"testcafe safari ./e2e/scenario/article/case/postNewArticleSpec.js"
   },
   "author": "",
   "license": "ISC",
