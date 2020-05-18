@@ -1,0 +1,30 @@
+post xxx/syncResult
+request：
+{
+  "wfid":"pipelineBuildId",
+  "changeId":"itilNum",
+  "labelInfo": [
+    {
+      "labelName":"xxxxx",
+      "groupId":"gid",
+      "artifactId":"aid"
+    },
+    {
+      "labelName":"xxxxx",
+      "groupId":"gid",
+      "artifactId":"aid"
+    }
+  ]
+}
+
+response(success):
+{
+"IsSuccess":true,
+"Message":"xxx"
+}
+
+response(failure):
+{
+"IsSuccess":false,
+"Message":"xxx"
+}

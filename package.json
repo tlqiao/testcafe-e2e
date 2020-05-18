@@ -6,13 +6,16 @@
   "scripts": {
     "version": "testcafe -v",
     "browsers": "testcafe -b",
-    "test:chrome": "testcafe chrome ./e2e/scenario/article/case/postNewArticleSpec.js",
-    "test:firefox": "testcafe firefox ./e2e/scenario/article/case/postNewArticleSpec.js",
-    "test:safari":"testcafe safari ./e2e/scenario/article/case/postNewArticleSpec.js"
+    "test:login": "testcafe chrome:headless e2e/scenario/basic/login_spec.js --reporter html:report/login_report.html",
+    "test:loginLive": "testcafe chrome e2e/scenario/basic/login_spec.js -l",
+    "test:selectCase": "testcafe chrome ./e2e/scenario/second/select_element_spec.js",
+    "test:firefox": "testcafe firefox e2e/scenario/basic/login_spec.js",
+    "test:safari": "testcafe safari e2e/scenario/basic/login_spec.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^0.23.2"
+    "testcafe": "^0.23.2",
+    "testcafe-reporter-html": "^1.4.5"
   }
 }

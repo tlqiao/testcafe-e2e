@@ -1,0 +1,32 @@
+Get xxx/{itilNum}/label-info
+response(success)：
+{
+"isSuccess":true,
+"result": {
+"applicant":"80xxxxxx",
+"applicantManager":"80xxxxxx",
+"startTime":"xxxx",
+"endTime":"xxxx",
+"isPassed":"true",
+"labelInfo":[
+{
+"labelName":"xxxxxx",
+"groupId":"gid",
+"artifactId":"aid"
+},
+{
+"labelName":"xxxxxx",
+"groupId":"gid",
+"artifactId":"aid"
+}
+]
+},
+"Message":"successxxxx"
+}
+
+response(failure):
+{
+"isSuccess": false,
+"result": {},
+"Message":"errorxxxx"
+}
