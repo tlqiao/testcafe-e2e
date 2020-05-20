@@ -1,0 +1,8 @@
+{
+  "skipUncaughtErrors": false,
+  "skipJsErrors": true,
+  "selectorTimeout": 6000,
+  "assertionTimeout": 6000,
+  "pageLoadTimeout": 6000,
+  "browser": "firefox"
+}

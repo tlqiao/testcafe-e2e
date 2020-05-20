@@ -7,15 +7,26 @@
     "version": "testcafe -v",
     "browsers": "testcafe -b",
     "test:login": "testcafe chrome:headless e2e/scenario/basic/login_spec.js --reporter html:report/login_report.html",
-    "test:loginLive": "testcafe chrome e2e/scenario/basic/login_spec.js -l",
-    "test:selectCase": "testcafe chrome ./e2e/scenario/second/select_element_spec.js",
+    "test:loginLive": "testcafe-live chrome e2e/scenario/basic/login_spec.js",
+    "test:loginLive2": "testcafe chrome e2e/scenario/basic/login_spec.js -L",
     "test:firefox": "testcafe firefox e2e/scenario/basic/login_spec.js",
-    "test:safari": "testcafe safari e2e/scenario/basic/login_spec.js"
+    "test:safari": "testcafe safari e2e/scenario/basic/login_spec.js",
+    "test:selectElement": "testcafe chrome e2e/scenario/action/select_element_spec.js",
+    "test:dragElement": "testcafe chrome e2e/scenario/action/drag_element_spec.js",
+    "test:uploadFile": "testcafe chrome e2e/scenario/action/uploadFile_spec.js -L",
+    "test:uploadFile2": "testcafe chrome e2e/scenario/action/uploadFileTwo_spec.js -L",
+    "test:iframeTest": "testcafe chrome e2e/scenario/action/iframeElement_spec.js -L",
+    "test:shadowDomTest": "testcafe chrome e2e/scenario/action/shadowDom_spec.js -L",
+    "test:handleDialog": "testcafe chrome e2e/scenario/action/handleDialog_spec.js -L",
+    "test:handleDialogTwo": "testcafe chrome e2e/scenario/action/handleDialogTwo_spec.js -L",
+    "test:hoverTest": "testcafe chrome e2e/scenario/action/hover_spec.js -L",
+    "test:pageBackForward": "testcafe chrome e2e/scenario/action/pageBackForward_spec.js -L"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^0.23.2",
+    "testcafe": "^1.8.4",
+    "testcafe-live": "^0.1.4",
     "testcafe-reporter-html": "^1.4.5"
   }
 }

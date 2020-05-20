@@ -1,7 +1,7 @@
 import {Selector, t} from 'testcafe'
 
-fixture('select element practice');
-test('should check MacOs redio button', async () => {
+fixture('select control element and validate result test');
+test('should check MacOs radio button', async () => {
     await t.navigateTo("http://devexpress.github.io/testcafe/example/");
     const macOSRadioButton = Selector('.column.col-2').find('label').child(el => el.value === 'MacOS');
 // const macOSRadioButton = Selector('.column.col-2 label #macos');
