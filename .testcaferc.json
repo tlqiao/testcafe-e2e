@@ -4,5 +4,9 @@
   "selectorTimeout": 6000,
   "assertionTimeout": 6000,
   "pageLoadTimeout": 6000,
-  "browser": "firefox"
+  "speed": 1,
+  "concurrency": 3,
+  "screenshots": {
+    "takeOnFails": true
+  }
 }

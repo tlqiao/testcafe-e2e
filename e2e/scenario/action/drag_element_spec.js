@@ -1,4 +1,4 @@
-import {Selector, t} from 'testcafe'
+import {Selector} from 'testcafe'
 fixture('drag element demo');
 test('should drag element successfully', async (t) => {
     await t.navigateTo("http://devexpress.github.io/testcafe/example/");

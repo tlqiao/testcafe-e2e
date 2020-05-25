@@ -6,4 +6,7 @@ test('should select and click element in iframe successfully', async () => {
     await t.expect(Selector('h1').innerText).contains("The button Element");
     await t.setNativeDialogHandler(() => true)
         .click('button');
+    await t.switchToMainWindow();
+    const button= Selector('div button').withText('Run »');
+    await t.click(button);
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "version": "testcafe -v",
     "browsers": "testcafe -b",
-    "test:login": "testcafe chrome:headless e2e/scenario/basic/login_spec.js --reporter html:report/login_report.html",
+    "test:login": "testcafe chrome:headless e2e/scenario/basic/login_spec.js",
     "test:loginLive": "testcafe-live chrome e2e/scenario/basic/login_spec.js",
     "test:loginLive2": "testcafe chrome e2e/scenario/basic/login_spec.js -L",
     "test:firefox": "testcafe firefox e2e/scenario/basic/login_spec.js",
@@ -20,7 +20,9 @@
     "test:handleDialog": "testcafe chrome e2e/scenario/action/handleDialog_spec.js -L",
     "test:handleDialogTwo": "testcafe chrome e2e/scenario/action/handleDialogTwo_spec.js -L",
     "test:hoverTest": "testcafe chrome e2e/scenario/action/hover_spec.js -L",
-    "test:pageBackForward": "testcafe chrome e2e/scenario/action/pageBackForward_spec.js -L"
+    "test:pageBackForward": "testcafe chrome e2e/scenario/action/pageBackForward_spec.js -L",
+    "test:debug": "testcafe --inspect-brk chrome e2e/scenario/debug/debug_spec.js",
+    "test": "testcafe chrome e2e/scenario/basic/*_spec.js"
   },
   "author": "",
   "license": "ISC",
