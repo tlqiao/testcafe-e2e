@@ -33,7 +33,7 @@ test('should add correctly', async () => {
     await t.expect(lastValue).contains("5");
 });
 
-test.only('should control the test web application successfully', async () => {
+test('should control the test web application successfully', async () => {
     await t.navigateTo('https://devexpress.github.io/testcafe/example/');
     await t.typeText('#main-form #developer-name', 'test user', {replace: true});
     await t.setNativeDialogHandler(() => true)
@@ -42,7 +42,7 @@ test.only('should control the test web application successfully', async () => {
     await t.click(myCheckBox);
     await t.expect(myCheckBox.checked).ok();
     const myRadioButton = Selector('#main-form label').withText('Windows').child('input');
-    await t.click(myRadioButton).debug();
+    await t.click(myRadioButton);
     await t.expect(myRadioButton.checked).ok();
     const selectBoth = Selector('#preferred-interface').find('option').withText('Both');
     await t.click('#preferred-interface')

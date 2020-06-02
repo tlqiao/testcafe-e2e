@@ -1,6 +1,5 @@
 fixture`handel dialog demo`
     .page`http://devexpress.github.io/testcafe/example/`;
-
 test('should handel confirm dialog successfully', async t => {
     await t
         .setNativeDialogHandler((type, text, url) => {
