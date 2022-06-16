@@ -3,7 +3,7 @@
   "dev": {
     "env": "dev",
     "appBaseUrl": "https://angular.realworld.io/",
-    "apiBaseUrl": "https://conduit.productionready.io/",
+    "apiBaseUrl": "https://conduit.productionready.io",
     "db": {
       "host": "localhost",
       "username": "root",
@@ -14,7 +14,7 @@
   "st": {
     "env": "st",
     "appBaseUrl": "https://angular.realworld.io/",
-    "apiBaseUrl": "https://conduit.productionready.io/",
+    "apiBaseUrl": "https://conduit.productionready.io",
     "db": {
       "host": "localhost",
       "username": "root",

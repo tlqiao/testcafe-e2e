@@ -1,6 +1,6 @@
 const fs = require('fs');
 const configs = require('./config');
-function getConfigs() {
+ function getConfigs() {
     const allConfigs = JSON.parse(fs.readFileSync('./e2e/scenario/demo/config/config.json'));
     let activeEnv;
     let configs = allConfigs.dev;

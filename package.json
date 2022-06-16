@@ -24,8 +24,7 @@
     "test:pageBackForward": "testcafe chrome e2e/scenario/action/pageBackForward_spec.js",
     "test:debug": "testcafe --inspect-brk chrome e2e/scenario/debug/debug_spec.js",
     "test:loginWithDBData": "testcafe chrome e2e/scenario/db/loginWithDBUser_spec.js -L",
-    "test:callApi": "testcafe chrome e2e/scenario/demo/feature/case/blogManage/callApi_spec.js -L",
-    "test:favoriateBlog": "testcafe chrome e2e/scenario/demo/feature/case/blogManage/favoriateBlog_spec.js -L -q",
+    "test:favoriateBlog": "testcafe chrome e2e/scenario/demo/feature/case/blogManage/favoriateBlog_spec.js",
     "test:failedCase": "testcafe chrome e2e/scenario/retry/loginFailed_spec.js",
     "test:getConfigsTwo": "node  e2e/scenario/demo/config/configManage.js",
     "test": "testcafe chrome e2e/scenario/basic/*_spec.js"
@@ -34,11 +33,16 @@
   "license": "ISC",
   "dependencies": {
     "csvtojson": "^2.0.10",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "mysql": "^2.18.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "testcafe": "^1.8.4",
     "testcafe-live": "^0.1.4",
     "testcafe-reporter-html": "^1.4.5"
+  },
+  "devDependencies": {
+    "supertest": "^6.2.3"
   }
 }
